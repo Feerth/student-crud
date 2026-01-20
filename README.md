@@ -25,3 +25,5 @@ Por favor, consulta los README específicos de cada módulo para instrucciones d
 
 ---
 
+<img width="1138" height="852" alt="Captura de pantalla 2026-01-20 142953" src="https://github.com/user-attachments/assets/b36bd935-77c0-4275-9db2-b4e8ca06eb7e" />
+<img width="736" height="664" alt="Captura de pantalla 2026-01-20 143045" src="https://github.com/user-attachments/assets/7f6773cd-b100-4885-8e2b-3e2caf9bd32a" />
