@@ -1,34 +1,45 @@
-# Sistema Estudiantes - Backend
+# Backend - Sistema de Gestión de Estudiantes
 
-Este es el backend para el sistema de gestión de estudiantes, construido con Spring Boot.
+API RESTful construida con Spring Boot para gestionar la información de los estudiantes.
 
-## Requisitos
+## 📋 Requisitos Previos
 
-- Java 21
-- PostgreSQL
+Asegúrate de tener instalado lo siguiente antes de comenzar:
 
-## Configuración
+- **Java Development Kit (JDK) 21**
+- **PostgreSQL** (Servidor de base de datos)
+- **Maven** (Opcional, si usas el wrapper incluido `./mvnw`)
 
-1. Asegúrate de tener PostgreSQL corriendo en el puerto 5432.
-2. Crea una base de datos llamada `estudiantesdb`.
-3. Configura tus credenciales en `src/main/resources/application.properties` (por defecto: user `postgres`, pass `123123`).
+## ⚙️ Configuración
 
-## Ejecución
+### Base de Datos
 
-Para iniciar la aplicación:
+1.  Asegúrate de que el servicio de PostgreSQL esté en ejecución en el puerto `5432`.
+2.  Crea una base de datos llamada `estudiantesdb`.
+3.  Verifica tus credenciales en `src/main/resources/application.properties`. Por defecto está configurado para:
+    - Usuario: `postgres`
+    - Contraseña: `123123`
+
+> **Nota**: Si tus credenciales son diferentes, actualiza el archivo `application.properties`.
+
+## 🚀 Ejecución
+
+Puedes iniciar la aplicación utilizando el wrapper de Maven incluido:
+
+**En Windows:**
+
+```powershell
+./mvnw spring-boot:run
+```
+
+**En Linux/Mac:**
 
 ```bash
 ./mvnw spring-boot:run
 ```
 
-O si tienes Maven instalado:
+La API estará disponible en: `http://localhost:8080`
 
-```bash
-mvn spring-boot:run
-```
+## 🧪 Endpoints Principales
 
-La API estará disponible en `http://localhost:8080`.
-
-## Contribuir
-
-El proyecto utiliza Lombok, asegúrate de tener el plugin instalado en tu IDE.
+La aplicación expone endpoints REST para las operaciones CRUD de estudiantes. Puedes probarlos usando Postman o cURL una vez iniciado el servidor.
